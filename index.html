@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Feed Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+    .img-custom {
+      border-radius: 4px;
+      width: 100%;
+    }
+    .card-custom {
+      background-color: black;
+      color: white;
+    }
+    .card-title,
+    .card-text {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Instagram</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menú</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center my-4">
+    <div class="my-3">
+      <button class="btn btn-outline-light me-2" id="gridViewBtn"><i class="bi bi-grid-3x3-gap"></i> Grid</button>
+      <button class="btn btn-outline-light" id="listViewBtn"><i class="bi bi-list"></i> List</button>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row" id="imageContainer">
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Un bosque con vistas al mar</h5>
+          </div>
+          <img src="https://picsum.photos/id/10/300/300" alt="Foto 1" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">Una vista impresionante desde la orilla del mar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Un río en invierno</h5>
+          </div>
+          <img src="https://picsum.photos/id/11/300/300" alt="Foto 2" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">La majestuosidad de las montañas en invierno.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Atardecer en la playa un día de invierno</h5>
+          </div>
+          <img src="https://picsum.photos/id/12/300/300" alt="Foto 3" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">Observando la playa un frío día de invierno.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Marea baja</h5>
+          </div>
+          <img src="https://picsum.photos/id/13/300/300" alt="Foto 4" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">Las aguas están tranquilas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Río cristalino</h5>
+          </div>
+          <img src="https://picsum.photos/id/14/300/300" alt="Foto 5" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">Agua pura corriendo entre las rocas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Cascada</h5>
+          </div>
+          <img src="https://picsum.photos/id/15/300/300" alt="Foto 6" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">Día húmedo frente a la cascada.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Lago sereno</h5>
+          </div>
+          <img src="https://picsum.photos/id/16/300/300" alt="Foto 7" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">Reflejos perfectos en aguas tranquilas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Campos de trigo</h5>
+          </div>
+          <img src="https://picsum.photos/id/17/300/300" alt="Foto 8" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">Olas doradas que bailan con el viento.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card card-custom">
+          <div class="card-body">
+            <h5 class="card-title">Flores en primavera</h5>
+          </div>
+          <img src="https://picsum.photos/id/18/300/300" alt="Foto 9" class="card-img-top img-custom" />
+          <div class="card-footer">
+            <p class="card-text">El color y la vida de la primavera.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const gridViewBtn = document.getElementById("gridViewBtn");
+    const listViewBtn = document.getElementById("listViewBtn");
+    const imageContainer = document.getElementById("imageContainer");
+
+    function setGridView() {
+      const cards = imageContainer.querySelectorAll(".row > div");
+      cards.forEach(card => {
+        card.classList.remove("col-12");
+        card.classList.add("col-12", "col-md-4");
+
+        const title = card.querySelector(".card-title");
+        const text = card.querySelector(".card-text");
+        if (title) title.style.display = "none";
+        if (text) text.style.display = "none";
+      });
+    }
+
+    function setListView() {
+      const cards = imageContainer.querySelectorAll(".row > div");
+      cards.forEach(card => {
+        card.classList.remove("col-md-4");
+        card.classList.add("col-12");
+
+        const title = card.querySelector(".card-title");
+        const text = card.querySelector(".card-text");
+        if (title) title.style.display = "block";
+        if (text) text.style.display = "block";
+      });
+    }
+
+    gridViewBtn.addEventListener("click", setGridView);
+    listViewBtn.addEventListener("click", setListView);
+  </script>
+
+</body>
+</html>
